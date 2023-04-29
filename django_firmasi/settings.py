@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #My Apps:
+    'page',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#TASKS:
+# TODO: Ana Sayfayi Goster
+# TODO: D.T.L. Base yapisini olustur
+#TODO: Ana sayfadaki karisik yapidan kurtul
+# TODO: Hakkimizda, Iletisim Gibi Sayfalar Icin View Olustur
+#TODO: Html Dosyalarini olustur.
+#TODO: DRY?
+# TODO: App icin urls.py olustur.
+# #TODO: Statik Dosyalari Calistir
+#TODO: Sayfalari Fake DB Icerisinde tutup SLUG ile cagirmaya calis.
