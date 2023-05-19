@@ -125,10 +125,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #TASKS:
-# TODO: Ana Sayfayi Goster
+# DONE: Ana Sayfayi Goster
+# DONE: Hakkimizda, Iletisim Gibi Sayfalar Icin View Olustur
 # TODO: D.T.L. Base yapisini olustur
 #TODO: Ana sayfadaki karisik yapidan kurtul
-# TODO: Hakkimizda, Iletisim Gibi Sayfalar Icin View Olustur
 #TODO: Html Dosyalarini olustur.
 #TODO: DRY?
 # TODO: App icin urls.py olustur.
