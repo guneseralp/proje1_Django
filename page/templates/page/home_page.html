@@ -1,38 +1,10 @@
 {% extends 'core/base.html'%}
 
-{% block container %}
-    <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://picsum.photos/id/27/1200/400" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/id/37/1200/400" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/id/23/1200/400" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/id/2/1200/400" class="d-block w-100 " alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- Carousel End -->
+
+    {% block container %}
+    {% include 'page/components/home_carousel.html'%}
+    
+    
     <div class="container-fluid mb-5">
         <!-- Hero Content -->
         <div class="row bg-dark border-bottom border-top p-4">
@@ -55,7 +27,7 @@
             </div>
             <div class="col-sm-6 d-flex justify-content-center align-items-center">
                 <div class="text-center">
-
+                    
                     <h1 class="display-2">Hakkimizda</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, eligendi.</p>
                     <p>Dolores esse et sed voluptatibus? Maxime, voluptatum. Repellat, quam vitae!</p>
@@ -66,34 +38,34 @@
         <!-- About Us End -->
     </div>
     
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Ürünlerimiz</h2>
-                <hr>
-            </div>
-            <!-- Products -->
-            <div class="col-sm-4">
-                <div class="card" >
-                    <img src="https://picsum.photos/id/24/400/250" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ürün 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">İncele</a>
-                    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Ürünlerimiz</h2>
+            <hr>
+        </div>
+        <!-- Products -->
+        <div class="col-sm-4">
+            <div class="card" >
+                <img src="https://picsum.photos/id/24/400/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ürün 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">İncele</a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" >
-                    <img src="https://picsum.photos/id/4/400/250" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ürün 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">İncele</a>
-                    </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" >
+                <img src="https://picsum.photos/id/4/400/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ürün 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">İncele</a>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card" >
+        </div>
+        <div class="col-sm-4">
+            <div class="card" >
                 <img src="https://picsum.photos/id/2/400/250" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ürün 3</h5>
@@ -101,11 +73,11 @@
                     <a href="#" class="btn btn-primary">İncele</a>
                 </div>
             </div>
-         </div>
         </div>
-        <!-- Products End -->
+    </div>
+    <!-- Products End -->
+    
+    
+    
 
-        
-    
-    
-{% endblock container %}
+    {% endblock container %}

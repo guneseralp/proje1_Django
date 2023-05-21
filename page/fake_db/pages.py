@@ -1,21 +1,34 @@
-{% extends 'core/base.html' %}
-{% block title %}{{ page_title }} |{% endblock title%}
-{% block container-fluid %}
-<div class="container-fluid mb-4">
-    <div class="row">
-        <div class="col-sm-12 px-0">
-            <img src="https://picsum.photos/id/41/1200/450" alt="" class="w-100">
+VISION_DETAIL = '''
+<div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <h2>Vizyonumuz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
+                <p>Sequi in fugiat voluptas! Dignissimos temporibus nihil accusamus placeat blanditiis!</p>
+                <p>Unde eum nam eligendi, amet nisi doloribus ex debitis a!</p>
+                
+                
+            </div>
         </div>
-    </div>
-    {% include 'page/components/hero_component.html' with hero_title=page_title%}
-    
-</div>
-{% endblock container-fluid  %}
+'''
 
-{% block container %}    
-    
-    
-        <div class="row">
+ABOUT_US_DETAIL = '''
+<div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <h2>Vizyonumuz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
+                <p>Sequi in fugiat voluptas! Dignissimos temporibus nihil accusamus placeat blanditiis!</p>
+                <p>Unde eum nam eligendi, amet nisi doloribus ex debitis a!</p>
+                <hr>
+                <h2>Misyonumuz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quo.</p>
+                <p>Sequi in fugiat voluptas! Dignissimos temporibus nihil accusamus placeat blanditiis!</p>
+                <p>Unde eum nam eligendi, amet nisi doloribus ex debitis a!</p>
+            </div>
+        </div>
+'''
+
+CONTACT_DETAIL ='''
+<div class="row">
             <div class="col-sm-8 offset-sm-2">
                 <h2>Adresimiz</h2>
                 <address>
@@ -59,6 +72,11 @@
                   </form>
             </div>
         </div>
-        
-    
-{% endblock container %}
+
+'''
+
+FAKE_DB_PAGES =[
+    {"url": "iletisim", "detail": CONTACT_DETAIL,"title": "İletişim"},
+    {"url": "hakkimizda","detail": ABOUT_US_DETAIL,"title": "Hakkımızda"},
+    {"url": "vizyonumuz","detail": VISION_DETAIL,"title": "Vizyonumuz"},
+]   

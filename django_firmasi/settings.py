@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #My Apps:
     'page',
+    'product',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'django_firmasi.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -64,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_firmasi.project_context_processor.global_context',
             ],
         },
     },
@@ -119,6 +123,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR/ 'static_files',
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -127,10 +135,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #TASKS:
 # DONE: Ana Sayfayi Goster
 # DONE: Hakkimizda, Iletisim Gibi Sayfalar Icin View Olustur
-# TODO: D.T.L. Base yapisini olustur
-#TODO: Ana sayfadaki karisik yapidan kurtul
-#TODO: Html Dosyalarini olustur.
-#TODO: DRY?
-# TODO: App icin urls.py olustur.
-# #TODO: Statik Dosyalari Calistir
-#TODO: Sayfalari Fake DB Icerisinde tutup SLUG ile cagirmaya calis.
+# DONE: D.T.L. Base yapisini olustur
+#DONE: Ana sayfadaki karisik yapidan kurtul
+#DONE: Html Dosyalarini olustur.
+#DONE: DRY?
+#DONE: App icin urls.py olustur.
+#DONE: Statik Dosyalari Calistir
+#DONE: Sayfalari Fake DB Icerisinde tutup SLUG ile cagirmaya calis.
+#TODO: Başka bir App ekleyip Modüler Yapyı Anlamaya çalış
